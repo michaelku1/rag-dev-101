@@ -4,6 +4,7 @@ import sqlite3
 conn = sqlite3.connect("rag_spreadsheet.db")
 cursor = conn.cursor()
 
+# NOTE table for stroing raw table chunks
 # sections = raw chunks
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS sections (
@@ -18,6 +19,7 @@ CREATE TABLE IF NOT EXISTS sections (
 """)
 
 # embeddings = derived vectors
+# NOTE table for stroing vector embeddings
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS embeddings (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

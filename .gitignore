@@ -1,4 +1,15 @@
 ### General template
+*.pkl
+*.csv
+*.xlsx
+*.xls
+*.json
+*.db
+*.sqlite
+*.sqlite3
+
+sample_data/
+
 # pico
 .*.swp
 

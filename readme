@@ -1,0 +1,12 @@
+## test parsing
+
+- goal is to get blocks of continuous content as accurately as possible
+- realising that in between each processed block NaN values represent spacing
+- so we can construct an algorithm to find boundaries and then extract them
+- **assumption**: there are subtables with and without header
+
+run 
+- python3 quick-poc.py
+
+## XXX
+TBD
