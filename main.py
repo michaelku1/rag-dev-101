@@ -1,9 +1,9 @@
 from parsers.parser_factory import ParserFactory
 
 def process_file(file_path: str, file_type: str):
-    parser = ParserFactory.get_parser(file_type)
-    text = parser.parse(file_path)
-    # now you can pass `text` into embeddings / vector DB etc.
+    pipeline = ParserFactory.get_pipeline(file_type)
+    text = pipeline.run(file_path)
+    # send text into embeddings/vector DB
     return text
 
 if __name__ == "__main__":
