@@ -4,6 +4,9 @@
 ## data
 - can start from dirty spreadsheet data from https://www.kaggle.com/datasets/shivavashishtha/dirty-excel-data
 
+## data-pipeline (假想)
+- two stage, first find boundaries and blocks, then normalize data
+
 ## pattern
 - create a pdf module and a spreadsheet module, each containing multiple parsing methods
 - may use factor design or just simple direct constructor call (factory corresponds to the data pipelines better, so factory should be optimal)
@@ -23,6 +26,7 @@ rag_app/
 │   ├── pdf_pipeline.py           # optional: pipeline logic unique to PDFs
 │
 │── main.py                  # entrypoint for your RAG app
+
 
 
 ## test parsing
