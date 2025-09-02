@@ -1,6 +1,27 @@
 ## business logic
 - handle spreadsheets and pdfs, compare different pipeline processing methods
 
+## pattern
+- create a pdf module and a spreadsheet module, each containing multiple parsing methods
+- may use factor design or just simple direct constructor call (factory corresponds to the data pipelines better, so factory should be optimal)
+- can start with the following structure
+
+rag_app/
+│── parsers/
+│   ├── __init__.py
+│   ├── base_parser.py       # abstract base class (interface)
+│   ├── spreadsheet_parser.py
+│   ├── pdf_parser.py
+│   └── parser_factory.py    # factory implementation
+│
+│── pipelines/
+│   ├── __init__.py
+│   ├── spreadsheet_pipeline.py   # optional: pipeline logic unique to spreadsheets
+│   ├── pdf_pipeline.py           # optional: pipeline logic unique to PDFs
+│
+│── main.py                  # entrypoint for your RAG app
+
+
 ## test parsing
 
 - goal is to get blocks of continuous content as accurately as possible

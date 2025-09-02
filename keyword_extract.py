@@ -4,6 +4,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 from sqlite_connection import ConnectionPool
 
+"""
+extract keywords to analyze and generate queries for RAG
+"""
+
 
 # ---- CONFIG ----
 SQLITE_PATH = "/Users/michael/Desktop/eparse/simple-rag/rag_spreadsheet.db"
