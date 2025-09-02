@@ -1,5 +1,5 @@
-from .spreadsheet_parser import SpreadsheetParser
-from .pdf_parser import PDFParser
+# from .spreadsheet_parser import SpreadsheetParser
+# from .pdf_parser import PDFParser
 
 from pipelines.spreadsheet_pipeline import SpreadsheetPipeline
 from pipelines.pdf_pipeline import PDFPipeline

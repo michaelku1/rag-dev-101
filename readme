@@ -1,6 +1,9 @@
 ## business logic
 - handle spreadsheets and pdfs, compare different pipeline processing methods
 
+## data
+- can start from dirty spreadsheet data from https://www.kaggle.com/datasets/shivavashishtha/dirty-excel-data
+
 ## pattern
 - create a pdf module and a spreadsheet module, each containing multiple parsing methods
 - may use factor design or just simple direct constructor call (factory corresponds to the data pipelines better, so factory should be optimal)

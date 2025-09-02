@@ -7,5 +7,6 @@ def process_file(file_path: str, file_type: str):
     return text
 
 if __name__ == "__main__":
-    txt1 = process_file("data/sample.xlsx", "spreadsheet")
-    txt2 = process_file("data/report.pdf", "pdf")
+    PATH = "/Users/michael/Desktop/eparse/simple-rag/sample_data/messy_crm_sales_one_sheet.xlsx"
+    txt1 = process_file(PATH, "spreadsheet")
+    # txt2 = process_file("data/report.pdf", "pdf")
