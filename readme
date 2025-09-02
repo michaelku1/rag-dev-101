@@ -1,3 +1,6 @@
+## business logic
+- handle spreadsheets and pdfs, compare different pipeline processing methods
+
 ## test parsing
 
 - goal is to get blocks of continuous content as accurately as possible
@@ -5,8 +8,8 @@
 - so we can construct an algorithm to find boundaries and then extract them
 - **assumption**: there are subtables with and without header
 
-run 
+## main flow
 - python3 quick-poc.py
 
-## XXX
-TBD
+## visualize parsing results
+- streamlit run simple-rag/parsing_sample_code/streamlit_app.py

@@ -48,7 +48,6 @@ def init_and_insert_sections(sections, cursor, conn):
         conn.rollback()
         raise Exception(f"Database error: {e}")
 
-
 def embed_sections(section_rows):
     vectors = []
     ids = []
